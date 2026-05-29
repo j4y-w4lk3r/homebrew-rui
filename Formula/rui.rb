@@ -5,21 +5,21 @@
 class Rui < Formula
   desc "Terminal UI for managing home routers (Orange Livebox/Funbox today; Play/Fritz on the roadmap)"
   homepage "https://github.com/j4y-w4lk3r/rui"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.1/rui_0.1.1_Darwin_x86_64.tar.gz"
-      sha256 "e5c6869fd7cf7e2e6bafd8d94b776a96c796d9c88d4964e29eaca661257c32ce"
+      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.2/rui_0.1.2_Darwin_x86_64.tar.gz"
+      sha256 "3f33db01a473b71f86c94622f017e2d0c2b9d765e783eb9aefff1219be191b20"
 
       define_method(:install) do
         bin.install "rui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.1/rui_0.1.1_Darwin_arm64.tar.gz"
-      sha256 "960c69c9292ba530e54292f39ba0366e324c0a36478b98978f792bd7d1b4e9f5"
+      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.2/rui_0.1.2_Darwin_arm64.tar.gz"
+      sha256 "9581726385fb29bca00deedf05b9e3e5fab417a5fe4132bbcd3ae9e97627a63b"
 
       define_method(:install) do
         bin.install "rui"
@@ -29,15 +29,15 @@ class Rui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.1/rui_0.1.1_Linux_x86_64.tar.gz"
-      sha256 "b3d4ba897d4603141e601374ec886386effcd40b40554fdfc798083799f8edc9"
+      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.2/rui_0.1.2_Linux_x86_64.tar.gz"
+      sha256 "8074e1465f86001e4bd3e0698b551eacce4d1a6fbbaa1133c6472744dc297e11"
       define_method(:install) do
         bin.install "rui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.1/rui_0.1.1_Linux_arm64.tar.gz"
-      sha256 "3495012db0e223cfe4ab484b3b88d21e2969cd15f1b5d82907a59ad9d1d4fcd4"
+      url "https://github.com/j4y-w4lk3r/rui/releases/download/v0.1.2/rui_0.1.2_Linux_arm64.tar.gz"
+      sha256 "247fb5a1f209788945395f00c4706838702ae5d5a05917d82193002478da5a51"
       define_method(:install) do
         bin.install "rui"
       end
